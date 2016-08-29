@@ -3,6 +3,9 @@
 
 Various little games, I used to learn and play with programming languages
 
+To build a game call *make* in a subdirectory. Maybe read the prerequisites
+in *Makefile* first.
+
 ## Hectic
 
 A maze running game. Collect prices and don't bump into obstacles and walls.
@@ -48,7 +51,12 @@ add 10 points to each diagonal score
 
 ![Mathematico screenshot](images/mathematico01.png)
 
+## Sokoban
+
+The classical Sokoban game. Text based and with undo.
+
+![Sokoban screenshot](images/sokoban01.png)
+
 ## more to come ...
 
-* Sokoban, in Free Pascal
 * graphical Mathematico (in Ada)
