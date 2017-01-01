@@ -2,7 +2,7 @@
 # Compiles on Ubuntu, openSUSE and FreeBSD without modification
 # needs ncurses libraries
 
-COPTS=-Wall -pedantic
+COPTS=-Wall -pedantic -std=c89
 CC=cc
 
 hectic: hectic.o instructions.o

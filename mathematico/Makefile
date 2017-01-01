@@ -2,8 +2,8 @@
 # Compiles on Ubuntu, openSUSE and FreeBSD without modification
 # needs ncurses libraries
 
-CC=cc 
-COPTS=-Wall -pedantic
+CC=cc
+COPTS=-Wall -pedantic -std=c99
 
 mathematico: mathematico.o instructions.o
 	$(CC) $(COPTS) -omathematico mathematico.o instructions.o -lncurses

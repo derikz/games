@@ -17,11 +17,10 @@
  *
  * 1. Redistributions of source code must retain the above copyright
  *    notice, this list of conditions and the following disclaimer.
+ *
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
- * 3. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
  * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
@@ -57,7 +56,7 @@ int drawn_cards[13];	        /* number of drawn cards */
 #define BG	COLOR_BLACK
 
 /* palette indexes (pair in curses speech) */
-#define P_LINE	1	
+#define P_LINE	1
 #define P_POINT 2
 #define P_SIDE	3
 #define P_TITLE	4
@@ -254,7 +253,7 @@ bool place_card() {
 int eval_five(int a, int b, int c, int d, int e) {
   int res = 0;
   int x[5];
-  
+
   x[0]=a; x[1]=b; x[2]=c; x[3]=d; x[4]=e;
 
   /* sort x[] */
@@ -392,7 +391,7 @@ int main(int argc,char **argv) {
   init_board();
   display_board();
   print_score();
-  
+
   /* game loop */
   bool endofgame = false;
   while (!endofgame) {
@@ -408,6 +407,6 @@ int main(int argc,char **argv) {
   move(23,0);
   refresh();
   endwin();
-  
+
   return 0;
 }
