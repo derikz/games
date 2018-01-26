@@ -56,7 +56,3 @@ add 10 points to each diagonal score
 The classical Sokoban game. Text based and with undo.
 
 ![Sokoban screenshot](images/sokoban01.png)
-
-## more to come ...
-
-* graphical Mathematico (in Ada)
